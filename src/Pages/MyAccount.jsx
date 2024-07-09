@@ -47,7 +47,7 @@ const MyAccount = () => {
         <section id='account' className='main'>
             <div className="heading">
                 <h1>My <span>Account</span></h1>
-                <img src="public/Images/Group 50.png" alt="profilePhoto" />
+                <img src="/Images/Group 50.png" alt="profilePhoto" />
             </div>
 
             <div className="accountDetails">
