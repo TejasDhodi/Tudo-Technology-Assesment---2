@@ -165,8 +165,9 @@
         flex-direction: column;
     }
 
-    .scheduleBox, .scheduleHead {
-        width: 83.65vw;
+    .scheduleBox,
+    .scheduleHead {
+        width: 83.65vw !important;
     }
 
     .scheduleDescription p {
@@ -179,7 +180,8 @@
         width: 16rem;
     }
 
-    .instructor img, .instructorHead img {
+    .instructor img,
+    .instructorHead img {
         width: 11rem;
     }
 
@@ -198,5 +200,10 @@
 
     .rowCircle svg {
         width: 2.5rem;
+    }
+
+    .scheduleBox,
+    .scheduleHead {
+        width: 83.65vw !important;
     }
 }
