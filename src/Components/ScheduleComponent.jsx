@@ -19,7 +19,7 @@ const ScheduleComponent = () => {
                             <img src="/Images/FullBody.png" alt="instructor" />
                         </div>
                         <div className="instructorHead">
-                            <img src="public/Images/HeadOnly.png" alt="instructorHead" />
+                            <img src="/Images/HeadOnly.png" alt="instructorHead" />
                         </div>
                     </div>
 
