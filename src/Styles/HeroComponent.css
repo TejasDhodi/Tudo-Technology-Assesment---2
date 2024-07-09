@@ -1,0 +1,142 @@
+#heroSection {
+    background-image: url('../../public/Images/floral-2746540__340\ 1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    display: flex;
+    gap: 5rem;
+}
+
+.heroPart1 .videoPart {
+    width: 39.65rem;
+    height: 24.87rem;
+    border-radius: 1rem;
+}
+
+.heroPart1 .videoPart iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.heroPart2 .heroNav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.heroPart2 .heroNav p {
+    padding-bottom: 1rem;
+    font-size: 22.78px;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.heroPart2 .heroNav .activeHeroNav {
+    color: var(--red, #FE5266);
+    border-bottom: 2px solid;
+}
+
+
+
+.heroPart2 .heroDescription {
+    width: 24.2324375rem;
+}
+
+.heroPart2 .heroControls {
+    margin-top: 36%;
+}
+
+.heroPart2 .heroControls h3 {
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: 156.5%;
+    background: linear-gradient(90deg, #F24397 0.17%, #F64C3B 105.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}
+
+.heroPart2 .heroControls button {
+    padding: 1.5rem 2rem;
+    border-radius: 3.125rem;
+    margin-right: 1rem;
+    background-image: var(--GradientText, linear-gradient(90deg, #F24397 0.17%, #F64C3B 105.5%));
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heroPart2 .heroControls button:last-child {
+    border: 1px solid var(--GradientText, #F24397);
+    color: #F24397;
+    background-image: var(--GradientText, #fff);
+
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+
+    .heroPart1 .videoPart {
+        width: 28.65rem;
+        height: 24.87rem;
+        border-radius: 1rem;
+    }
+
+    .heroPart2 .heroControls {
+        margin-top: 14%;
+    }
+}
+
+@media screen and (max-width:1025px) {
+
+    .hero {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .hero {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .heroPart1 .videoPart {
+        width: 83.65vw;
+    }
+
+    .heroPart1 .videoPart iframe {
+        aspect-ratio: 16 / 9;
+    }
+
+    .heroPart2 .heroDescription {
+        width: 82vw;
+    }
+
+    .heroPart2 .heroControls {
+        margin-top: 3%;
+    }
+
+    .heroControlButtons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .heroPart2 .heroControls button {
+        margin-right: 0;
+    }
+}

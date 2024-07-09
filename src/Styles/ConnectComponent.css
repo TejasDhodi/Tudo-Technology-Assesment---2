@@ -1,0 +1,119 @@
+#Connect {
+    height: 28.625rem;
+    width: 100%;
+    background: #FFF3E9;
+    padding: 5rem 17%;
+    margin-bottom: 0;
+}
+
+#Connect .connectDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+#Connect .connectDetailsContainer:nth-child(2) {
+    border-bottom: 1px solid;
+}
+
+.connectDetailsContainer .connectDetails {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.connectHeads h1 {
+    color: #000;
+    font-size: 2.28063rem;
+    font-weight: 400;
+}
+
+.connectHeads h3 {
+    color: #000;
+    font-size: 1.80188rem;
+    font-weight: 300;
+}
+
+.connectDetails p {
+    color: #000;
+    font-size: 1.125rem;
+    line-height: 156.5%;
+}
+
+.connectDetails svg,
+.connectDetails img {
+    width: 1.625rem;
+    height: 1.625rem;
+}
+
+.connectDescription {
+    width: 29.5625rem;
+    padding: 2rem 0;
+}
+
+.connectDescription p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1025px) {
+
+    #Connect {
+        height: 28.625rem;
+        width: 100%;
+        background: #FFF3E9;
+        padding: 5rem 11%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #Connect {
+        height: 22.625rem;
+    }
+
+    .connectHeads h3 {
+        font-size: 1.5rem;
+    }
+
+    .connectHeads h1 {
+        font-size: 1.7rem;
+    }
+
+    .connectDescription {
+        width: 70vw;
+    }
+
+
+}
+
+@media screen and (max-width: 481px) {
+    #Connect .connectDetailsContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .connectDetailsContainer .connectDetails {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #Connect {
+        height: 28.625rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #Connect {
+        height: 32.625rem;
+    }
+
+    .connectHeads h1 {
+        font-size: 1.5rem;
+    }
+}

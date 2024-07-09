@@ -1,0 +1,169 @@
+.teachersParts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.teacherNames {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.teacherNames li {
+    color: #8C8C8C;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 1.42375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.teacherNames .activeTeacher {
+    color: #FE5266;
+    font-size: 1.80188rem;
+    list-style: disc;
+}
+
+.teacherDetails {
+    width: 46.1875rem;
+    height: 26.4375rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    background: #C4C4C4;
+    padding: 4rem 0;
+}
+
+.details p {
+    width: 29.0625rem;
+    height: 17.5625rem;
+    font-size: 1rem;
+    color: var(--grey, #4D4D4D);
+    padding-top: 1.5rem;
+}
+
+.detailsControls {
+    display: flex;
+    justify-content: end;
+    padding-right: 8rem;
+    gap: 4rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.detailsControls svg {
+    cursor: pointer;
+}
+
+.activeButton {
+    transform: scale(1.3);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1025px) {
+
+    .scheduleBox,
+    .scheduleHead {
+        width: 30.72956rem;
+    }
+
+    .teacherDetails {
+        width: 42.1875rem;
+        height: 22.4375rem;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 1rem;
+        background: #C4C4C4;
+        padding: 4rem 0;
+    }
+
+    .teacherDetails svg {
+        width: 10rem;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .teachersParts {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .teacherNames {
+        flex-direction: row;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .teacherDetails {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
+    .detailsControls {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .details p {
+        font-size: 0.84rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teacherNames {
+        overflow: auto;
+    }
+
+    .teacherDetails {
+        position: relative;
+    }
+
+    .teacherDetails svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 481px) {
+
+    .teacherNames {
+        gap: 1.5rem;
+    }
+
+    .teacherDetails {
+        height: 20rem;
+        padding: 0;
+    }
+
+    .details p {
+        width: 75vw;
+    }
+
+    .teacherNames .activeTeacher {
+        color: #FE5266;
+        font-size: 1.80188rem;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .teacherDetails {
+        height: 26rem;
+    }
+}

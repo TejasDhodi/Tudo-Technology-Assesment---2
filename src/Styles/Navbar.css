@@ -1,0 +1,105 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    background-color: #FFF3E9;
+    box-shadow: 0 0 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.navProfile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profileControlCotainer {
+    position: fixed;
+    top: 5.35rem;
+    right: 0;
+    box-shadow: 0 0 15px;
+    z-index: -1;
+    border-radius: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms ease;
+    list-style: none;
+    background: #fff;
+}
+
+.showProfileControlCotainer {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.profileControlCotainer .profileControls {
+    border-bottom: 1px solid #4D4D4D;
+    padding: 1rem 3.5rem;
+    font-size: 1.42375rem;
+}
+
+.navLink {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 1.42375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.profileControlCotainer .profileControls:last-child {
+    border: none;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navContent {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 481px) and (min-width:1px) {
+    .navbar {
+        padding: 1rem 0;
+        justify-content: space-around;
+    }
+
+    .navBrand h2 {
+        font-size: 1rem;
+    }
+
+    .navItems {
+        gap: 0.5rem;
+    }
+
+    .navItems .navList {
+        font-size: 0.8rem;
+    }
+
+    .navContent {
+        gap: 0.7rem;
+    }
+}

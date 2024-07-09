@@ -1,0 +1,116 @@
+#structure {
+    background: #FFF3E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#structure .structurePart1 .sectionTitle p {
+    width: 36.62rem;
+    margin: 2rem 0;
+}
+
+#structure .structurePart1 .instructions p {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 36.49px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#structure .structurePart1 .instructions p span {
+    background: var(--GradientText, linear-gradient(90deg, #F24397 0.17%, #F64C3B 105.5%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+}
+
+#structure .structurePart1 .instructionTitle {
+    display: flex;
+}
+
+#structure .structurePart1 .instructionTitle p {
+    padding: 0 1rem;
+    border-right: 1px solid #4D4D4D;
+    color: #565656;
+
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 32.443px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#structure .structurePart1 .instructionTitle p:last-child {
+    border-right: none;
+}
+
+#structure .structurePart2 {
+    height: 27.43rem;
+    width: 27.31rem;
+}
+
+#structure .structurePart2 img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1250px) {
+    #structure .structurePart1 .sectionTitle p {
+        width: 30.62rem;
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    
+    #structure .structurePart1 .instructionTitle p {
+        font-size: 1.5rem;
+    }    
+}
+
+@media screen and (max-width:900px) {
+
+    #structure {
+        flex-direction: column;
+    }  
+    
+    #structure .structurePart1 .sectionTitle p {
+        margin: 1rem 0;
+    }
+
+    .instructions p {
+        text-align: center;
+    }
+    
+    .instructions .instructionTitle {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    #structure .structurePart1 .sectionTitle p {
+        width: 85vw;
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    #structure .structurePart1 .instructionTitle p {
+        font-size: 1rem;
+    }
+
+    #structure .structurePart2 {
+        height: 22.43rem;
+        width: 22.31rem;
+    }
+}

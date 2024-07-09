@@ -1,0 +1,50 @@
+.sectionTitle {
+    margin: 1rem 0 1.5rem;
+}
+
+.sectionTitle h1 {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 36.49px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.sectionTitle h2 {
+    color: #000;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 37.65px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 156.5%;
+}
+
+
+.sectionTitle p {
+    color: var(--grey, #4D4D4D);
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 22.78px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+
+@media screen and (max-width:901px) {
+    .sectionTitle h1, .sectionTitle h2, .sectionTitle p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .sectionTitle h1 {
+        font-size: 2.2rem;
+    } 
+    .sectionTitle h2 {
+        font-size: 2rem;
+    }
+}

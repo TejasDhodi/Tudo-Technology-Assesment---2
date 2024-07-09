@@ -1,0 +1,202 @@
+.scheduleContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.scheduleImage {
+    position: relative;
+    flex: 1;
+}
+
+.eclipse .instructor {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    z-index: -1;
+}
+
+.eclipse .instructorHead {
+    position: absolute;
+    top: 0;
+    left: 14.5%;
+}
+
+.curvedRowContainer {
+    position: absolute;
+    bottom: 5rem;
+    left: -2.2rem;
+}
+
+.curvedRow {
+    position: relative;
+}
+
+.rowCircle {
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+
+.scheduleDetails {
+    flex: 1;
+}
+
+.scheduleHead {
+    display: flex;
+    justify-content: space-between;
+    width: 39.72956rem;
+    margin-bottom: 2rem;
+}
+
+.scheduleBox {
+    width: 39.72956rem;
+    height: 17.69488rem;
+    background: #C4C4C4;
+    position: relative;
+}
+
+.weakContainer {
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+    width: 9.0625rem;
+    height: 3.86975rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(77, 77, 77, 0.60);
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.scheduleDescription p {
+    width: 22rem;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+.scheduleDescription p:last-child {
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: "Avenir LT Std";
+    font-size: 1.42375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    background: var(--GradientText, linear-gradient(90deg, #F24397 0.17%, #F64C3B 105.5%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1440px) {
+
+    .scheduleContainer {
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width:1281px) {
+
+    .scheduleBox,
+    .scheduleHead {
+        width: 35.72956rem;
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+
+    .scheduleContainer {
+        align-items: center;
+    }
+
+    .eclipse>img {
+        width: 22rem;
+    }
+
+    .eclipse .instructor {
+        left: 15%;
+    }
+
+    .instructor img,
+    .instructorHead img {
+        width: 15rem;
+    }
+
+    .instructorHead {
+        left: 14.5%;
+    }
+
+    .curvedRowContainer {
+        bottom: -3rem;
+        left: -2rem;
+    }
+
+    .curvedRow svg {
+        width: 22rem;
+    }
+
+    .rowCircle {
+        left: -19px;
+    }
+
+    .rowCircle svg {
+        width: 2.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+    .scheduleBox,
+    .scheduleHead {
+        width: 30.72956rem;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .scheduleContainer {
+        flex-direction: column;
+    }
+
+    .scheduleBox, .scheduleHead {
+        width: 83.65vw;
+    }
+
+    .scheduleDescription p {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .eclipse>img {
+        width: 16rem;
+    }
+
+    .instructor img, .instructorHead img {
+        width: 11rem;
+    }
+
+    .curvedRowContainer {
+        bottom: -5rem;
+        left: -1.5rem;
+    }
+
+    .curvedRow svg {
+        width: 16rem;
+    }
+
+    .rowCircle {
+        left: -1.1rem;
+    }
+
+    .rowCircle svg {
+        width: 2.5rem;
+    }
+}
