@@ -166,3 +166,9 @@
         height: 29rem;
     }
 }
+
+@media screen and (max-width: 250px) {
+    .teacherDetails {
+        height: 35rem;
+    }
+}
