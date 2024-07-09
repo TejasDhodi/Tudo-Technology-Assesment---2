@@ -162,8 +162,7 @@
 }
 
 @media screen and (max-width: 320px) {
-
     .teacherDetails {
-        height: 26rem;
+        height: 29rem;
     }
 }
